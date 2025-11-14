@@ -21,8 +21,8 @@ export interface BaseTool {
 /**
  * String parameter schema
  */
-export interface StringParam {
-  type: 'string';
+export type StringParam = {
+  readonly type: 'string';
   description: string;
   required?: boolean;
   default?: string;
@@ -31,8 +31,8 @@ export interface StringParam {
 /**
  * Number parameter schema
  */
-export interface NumberParam {
-  type: 'number';
+export type NumberParam = {
+  readonly type: 'number';
   description: string;
   required?: boolean;
   default?: number;
@@ -43,8 +43,8 @@ export interface NumberParam {
 /**
  * Boolean parameter schema
  */
-export interface BooleanParam {
-  type: 'boolean';
+export type BooleanParam = {
+  readonly type: 'boolean';
   description: string;
   required?: boolean;
   default?: boolean;
@@ -97,7 +97,7 @@ export interface Agent {
   id: string;
   name: string;
   prompt: string;
-  tools: Tool[];
+  tools: Tool<any>[];
   createdAt: Date;
   updatedAt: Date;
 }

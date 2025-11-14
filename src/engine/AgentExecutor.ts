@@ -13,7 +13,6 @@ import {
   ToolCall,
   ToolResult,
   Message,
-  ParameterSchema,
 } from '../types/agent';
 
 /**

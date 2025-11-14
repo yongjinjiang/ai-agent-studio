@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Agent, Message } from './types/agent';
 import { AgentExecutor } from './engine/AgentExecutor';
 import { createExampleAgent } from './tools/exampleTools';

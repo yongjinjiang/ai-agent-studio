@@ -280,7 +280,7 @@ export function createCustomTool(
   name: string,
   description: string,
   parameters: ParameterSchema,
-  implementation: string
+  _implementation: string
 ): Tool {
   return {
     type: 'function',
